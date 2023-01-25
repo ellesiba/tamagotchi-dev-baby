@@ -81,7 +81,7 @@ function instructions(){
 
 function GameStart(){
     welcome();
-    function statsHunger{
+    function statsHunger() {
         const feedStat = document.getElementById('.hunger');
     }
 }
