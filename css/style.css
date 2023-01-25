@@ -9,6 +9,7 @@ body{
     margin:0;
 }
 
+
 h1{
     font-family: 'Berkshire Swash', cursive;
     font-size: 100px;
@@ -16,11 +17,20 @@ h1{
     text-align: center;
 }
 
-/* #sprite{
-    animamation
-} */
+
+.top-buttons{
+    text-align: center;
 
 
+}
 
+  
+  #sprite{
 
-  /* style="background-color: pink;border-radius: 5px;font-size: 45px; color: white; border-color: white;" */
+    position: absolute;
+    width: 138px;
+    height: 132px;
+    top: 60%;
+    left: 100%;
+    
+  }

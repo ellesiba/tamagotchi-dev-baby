@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>   
+/* where'd she go? no one knows... */
  #sprite {
     width: 138px;
-    height: 132px;
+    height: 132px; 
+    z-index: inex;
     background: url(https://i.imgur.com/S8ahF36.png) 0 0;
+
   }
 
   .button {
@@ -19,6 +22,13 @@
     text-decoration: none;
     display: inline-block;
     font-size: 45px;
+    margin-right: 20px ;
+    margin-left: 100px ;
+  }
+  .button:hover {
+      background-color:white;
+      color: pink;
+      transition: 0.7s;
   }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +43,7 @@
     <h1>Dev, Baby!</h1>
 
 
+
 </head>
 <body>
     
@@ -41,8 +52,10 @@
     <script type="text/javascript" src="js/app.js"></script>
 
       <img id="sprite" src="https://i.imgur.com/S8ahF36.png" width="1" height="1">
-<button class="button" onclick="welcome()" style="background-color: pink;border-radius: 5px;font-size: 45px; color: white; border-color: white;"> Start</button>
-<!-- <button class="button">click</button> -->
-<button class="button">
+<div class="top-buttons">
+    <button class="button" onclick="welcome()"> Start</button>
+    <!-- <button class="button">click</button> -->
+    <button class="button" onclick="instructions()">Baby Dev Guide</button>
+</div>
 </body>
 </html>
