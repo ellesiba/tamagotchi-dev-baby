@@ -20,4 +20,23 @@
         alert('must be nice...')
         alert('Keep track of its stats or you lil dev may die from neglect.')
         alert('Good luck!')
-    }    
+    }  
+
+// class for bb dev include what the button with be as constructors
+
+class babyDev {
+    constructor(name, hunger, sleep, boredom, age){
+        this.name = name,
+        this.hunger = hunger,
+        this.sleep = sleep
+        this.boredom = boredom,
+        this.age = age
+    }
+} //
+
+
+
+//if buttons are pressed increase, and intervally stats go down
+
+//need to set age with a interval to go up 
+    //if stats not zero then age up

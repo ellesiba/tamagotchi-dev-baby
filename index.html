@@ -27,6 +27,10 @@
       color: pink;
       transition: 0.7s;
   }
+
+
+
+
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,6 +57,31 @@
     <button class="button" onclick="welcome()"> Start</button>
     <!-- <button class="button">click</button> -->
     <button class="button" onclick="instructions()">Baby Dev Guide</button>
+    
 </div>
+
+<div class="stats-area" id="stats-area">
+<!--Hunger -->
+    <div class="hungerSection" id="hungerSection">
+    <p>Hunger</p></div><div class="hunger" id="hunger"><p>100</p></div>
+    <button id="feedBtn" class="feedBtn">Feed</button>
+
+<!-- Sleep -->
+    <div class="sleepSection" id="sleepSection">
+    <p>Sleepiness<p></p></div><div class="sleep" id="sleep"><p>0</p></div>
+    <button id="sleepBtn" class="sleepBtn">Sleep</button>
+
+
+<!-- Play -->
+    <div class="boredomSection" id="boredomSection">
+    <p>Boredom</p></div><div class="boredom" id="boredom"><p>0</p></div>
+    <button id="playBtn" class="playBtn">Play</button>
+
+  <!--Age Area  -->
+    <div class="ageSection" id="ageSection">
+    <p>Age</p></div><div class="age" id="age"><p>0</p></div>
+</div>
+
+
 </body>
 </html>
