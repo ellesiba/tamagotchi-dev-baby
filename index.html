@@ -7,34 +7,15 @@
 
   }
 
-  .button {
-    background-color: pink;
-    border: white;
-    border-radius: 8px;
-    border-width: 5px;
-    border-color: white;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 45px;
-    margin-right: 20px ;
-    margin-left: 100px ;
-  }
-  .button:hover {
-      background-color:white;
-      color: pink;
-      transition: 0.7s;
-  }
-
-
-
-
 </style>
+<!-- GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Press+Start+2P&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,43 +25,35 @@
     <h1>Dev, Baby!</h1>
 
 
-
 </head>
 <body>
-    
-    <!-- <div id="start-button" onclick="welcome()">Start</div> -->
-
     <script type="text/javascript" src="js/app.js"></script>
+    <img id="sprite" src="https://i.imgur.com/S8ahF36.png" width="1" height="1">
+    <div class="top-buttons">
+        <button class="startBtn" id="startBtn" onclick="GameStart()"> Start</button>
+        <button class="guideBtn" id="guideBtn" onclick="instructions()">Baby Dev Guide</button>
+    </div>
 
-      <img id="sprite" src="https://i.imgur.com/S8ahF36.png" width="1" height="1">
-<div class="top-buttons">
-    <button class="button" onclick="welcome()"> Start</button>
-    <!-- <button class="button">click</button> -->
-    <button class="button" onclick="instructions()">Baby Dev Guide</button>
-    
-</div>
-
-<div class="stats-area" id="stats-area">
-<!--Hunger -->
-    <div class="hungerSection" id="hungerSection">
-    <p>Hunger</p></div><div class="hunger" id="hunger"><p>100</p></div>
-    <button id="feedBtn" class="feedBtn">Feed</button>
+    <div class="stats-area" id="stats-area">
+        <!--Hunger -->
+        <div class="hungerStat" id="hungerStat">
+        <p>Hunger</p></div><div class="hunger" id="hunger"><p>%</p></div>
+        <button id="feedBtn" class="feedBtn" onclick="BabyDev.feed()">Feed</button>
 
 <!-- Sleep -->
-    <div class="sleepSection" id="sleepSection">
-    <p>Sleepiness<p></p></div><div class="sleep" id="sleep"><p>0</p></div>
-    <button id="sleepBtn" class="sleepBtn">Sleep</button>
-
+        <div class="sleepStat" id="sleepStat">
+        <p>Sleepiness<p></p></div><div class="sleep" id="sleep"><p>%</p></div>
+        <button id="sleepBtn" class="sleepBtn" onclick="BabyDev.sleepiness()">Sleep</button>
 
 <!-- Play -->
-    <div class="boredomSection" id="boredomSection">
-    <p>Boredom</p></div><div class="boredom" id="boredom"><p>0</p></div>
-    <button id="playBtn" class="playBtn">Play</button>
+        <div class="boredomStat" id="boredomStat">
+        <p>Boredom</p></div><div class="boredom" id="boredom"><p>%</p></div>
+        <button id="playBtn" class="playBtn"onclick="BabyDev.playing()">Touch Grass</button>
 
   <!--Age Area  -->
-    <div class="ageSection" id="ageSection">
-    <p>Age</p></div><div class="age" id="age"><p>0</p></div>
-</div>
+        <div class="ageStat" id="ageStat">
+        <p>Age</p></div><div class="age" id="age"><p>0</p></div>
+    </div>
 
 
 </body>

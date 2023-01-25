@@ -1,33 +1,31 @@
 body{
     background-image: url('https://i.imgur.com/jC6aDiW.gif');
     background-size: cover;
-    
-    
-    
-    height: 100vh;
     padding:0;
     margin:0;
 }
 
-
+/* Title */
 h1{
     font-family: 'Berkshire Swash', cursive;
     font-size: 100px;
     color: white;
     text-align: center;
 }
-
+/* Font */
 p{
     font-family: 'Berkshire Swash', cursive;
     font-size: 30px;
     color: white;
 }
+
+
+/* BUTTONS */
 .top-buttons{
     text-align: center;
-
 }
 
-/* stats bar... may add opacity to make clearer */
+/* stats bar */
 .stats-area{ 
     display: flex;
     justify-content: space-evenly;
@@ -37,6 +35,7 @@ p{
 /* Buttons for stats */
 .feedBtn{
     font-size: 20px;
+    font-family: 'Press Start 2P';
     background-color: rgb(115, 68, 132);
     border: white;
     border-radius: 8px;
@@ -52,8 +51,10 @@ p{
     color: white;
 }
 
+/* ---------------------------------- */
   .playBtn{
     font-size: 20px;
+    font-family: 'Press Start 2P';
     background-color: rgb(115, 68, 132);
     border: white;
     border-radius: 8px;
@@ -68,11 +69,12 @@ p{
     transition: 0.7s;
     color: white;
 }
-  
+ /* ---------------------------------- */ 
   .sleepBtn{
     font-size: 20px;
+    font-family: 'Press Start 2P';
     background-color: rgb(115, 68, 132);
-        border: white;
+    border: white;
     border-radius: 8px;
     border-width: 5px;
     border-color: white;
@@ -85,15 +87,53 @@ p{
         color: white;
     }
 
+/* Start Button---------------- */
+    .startBtn{
+        background-color: pink;
+        font-family: 'Press Start 2P';
+        border: white;
+        border-radius: 8px;
+        border-width: 5px;
+        border-color: white;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 45px;
+        margin-right: 20px ;
+        margin-left: 100px ;
+    }
+    .startBtn:hover {
+        background-color:white;
+        color: pink;
+        transition: 0.7s;
+    }
+/* Instructions---------------- */
 
+    .guideBtn{
+        background-color: pink;
+        font-family: 'Press Start 2P';
+        border: white;
+        border-radius: 8px;
+        border-width: 5px;
+        border-color: white;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 45px;
+        margin-right: 20px ;
+        margin-left: 100px ;
+    }
+    .guideBtn:hover {
+        background-color:white;
+        color: pink;
+        transition: 0.7s;
+    }
 
-
-
-
-
-
-
-/* Animate my lil guy */
+/* ---------------------Animate my lil guy */
 @keyframes side-to-side {
     from {left: 80%;}
     to {left: 20%;}
@@ -103,9 +143,8 @@ p{
     from {top: 55%};
     to {bottom:48%};
   }
-
+/* --------Sprite Setting */
   #sprite{
-
     position: absolute;
     width: 138px;
     height: 132px;
@@ -115,5 +154,4 @@ p{
     animation-duration: 3.5s, .5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    
   }
