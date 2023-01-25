@@ -4,8 +4,7 @@
     //Sleep
     //Touch Grass
 
-    //math.random
-    //math florr for animation
+
     function welcome() {
         name = prompt(`First things, first. What is your baby dev's name?`)
         alert(`${name} That's a fine name! I had an uncle named that...`)
