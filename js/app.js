@@ -49,15 +49,20 @@ class BabyDev extends Tamagotchi{
             //death
     //if age 10 age up potato
         //if makes it to 15 'wins game'
+        //Nightmode use the red blue button shanger, but change image instead!!
 
     
             
 
 
 //link to the start of game or expand from here...
+
+//Function Junction
+
+
 function welcome() {
-    name = prompt(`First things, first. What is your baby dev's name?`)
-    alert(`${name} That's a fine name! I had an uncle named that...`)
+    name = prompt(`First things, first. What is your baby dev's name?`, 'Carlos')
+    alert(`${name}? That's a fine name! I had an titi named that...`)
     alert('Good luck with taking care of this little dev~!')
     alert(`you'll need it...`)
 } 
