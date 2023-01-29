@@ -1,159 +1,307 @@
-body{
-    background-image: url('https://i.imgur.com/jC6aDiW.gif');
+body {
+    background-image: url('https://i.imgur.com/ZXw1qCi.gif');
+    /* background-image: url('https://i.imgur.com/jC6aDiW.gif'); */
     background-size: cover;
     height: 100vh;
     padding:0;
-    margin:0;
-}
-
-/* Title */
-h1{
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 100px;
+    margin:0;}
+/* ==============Title========================= */
+  h1 {
+    font-size: 90px;
+    font-family: 'Berkshire Swash';
     color: white;
+    margin: 0px;
     text-align: center;
-}
-/* Font */
-p{
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 30px;
-    color: white;
-}
+    position: absolute, center;
+    margin-bottom: -90px;
+	-webkit-text-stroke: 1px pink;
+	text-shadow: 0px 2px 4px pink;
+  }
 
+/* ===============Button Cental============================ */
 
-/* BUTTONS */
-.top-buttons{
-    text-align: center;
-}
-
-/* stats bar */
-.stats-area{ 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-
-/* Buttons for stats */
-.feedBtn{
-    font-size: 20px;
+  /*-------- Open Screen ---------*/
+  #start-button{
+    background-color: pink;
     font-family: 'Press Start 2P';
-    background-color: rgb(115, 68, 132);
     border: white;
     border-radius: 8px;
     border-width: 5px;
     border-color: white;
     color: white;
     padding: 15px 32px;
-  }
-
-  .feedBtn:hover {
-    background-color: rgb(199, 154, 215);
-    transition: 0.7s;
-    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 20px ;
+    margin-left: 100px ;
 }
 
-/* ---------------------------------- */
-  .playBtn{
-    font-size: 20px;
+#start-button:hover {
+    background-color:white;
+    color: pink;
+    transition: 0.7s;
+}
+
+#guideBtn{
+    background-color: pink;
     font-family: 'Press Start 2P';
-    background-color: rgb(115, 68, 132);
     border: white;
     border-radius: 8px;
     border-width: 5px;
     border-color: white;
     color: white;
-    padding: 15px 32px;  
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 20px ;
+    margin-left: 100px ;
+}
+#guideBtn:hover {
+    background-color:white;
+    color: pink;
+    transition: 0.7s;
+}
+
+.top-buttons{
+    text-align: center;
+    margin-top: 150px;
+    }
+
+/* ------Name--------- */
+#create-button{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: pink;
+    position: relative;
+    margin-bottom: 10px;
+    border:  white;
+    color: white;
+    } 
+
+#create-button:hover {
+    background-color:white;
+    color: pink;
+    transition: 0.7s;
+    position: center;
+    }
+
+#naming-area {
+    width: 200px;
+    margin: 0 auto;
+    color: pink;
+  }
+  #naming-area input {
+    width: 300px;
+    height: 80px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border-color: white;
+    text-align: center;
+    color: pink;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+  }
+#naming-area {
+    width: 200px;
+    margin: 0 auto;
+    color: pink;
+  }
+#naming-area input {
+    width: 300px;
+    height: 80px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border-color: white;
+    text-align: center;
+    color: pink;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+  }
+/* ----------Stats----------------- */
+  #feed-button, #coding-button, #play-button {
+    color: white;
+    font-family: 'Press Start 2P';
+    position: relative;
+    /* flex-direction: row; */
   }
 
-  .playBtn:hover {
-    background-color: rgb(199, 154, 215);
-    transition: 0.7s;
-    color: white;
-}
- /* ---------------------------------- */ 
-  .sleepBtn{
-    font-size: 20px;
-    font-family: 'Press Start 2P';
-    background-color: rgb(115, 68, 132);
-    border: white;
-    border-radius: 8px;
-    border-width: 5px;
+  #feed-button {
+    width: 150px;
+    height: 60px;
+    background-color: pink;
+    margin-bottom: 10px;
     border-color: white;
-    color: white;
-    padding: 15px 32px;  }
+    border-width: 5px;
+    border-radius: 10px;
+  }
 
-    .sleepBtn:hover {
-        background-color: rgb(199, 154, 215);
-        transition: 0.7s;
-        color: white;
-    }
+  #coding-button {
+    width: 150px;
+    height: 60px;
+    background-color: pink;
+    margin-bottom: 10px;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+  }
 
-/* Start Button---------------- */
-    .startBtn{
-        background-color: pink;
-        font-family: 'Press Start 2P';
-        border: white;
-        border-radius: 8px;
-        border-width: 5px;
-        border-color: white;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 45px;
-        margin-right: 20px ;
-        margin-left: 100px ;
-    }
-    .startBtn:hover {
-        background-color:white;
-        color: pink;
-        transition: 0.7s;
-    }
-/* Instructions---------------- */
+  #play-button {
+    width: 150px;
+    height: 60px;
+    background-color: pink;
+    margin-bottom: 10px;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+  }
 
-    .guideBtn{
-        background-color: pink;
-        font-family: 'Press Start 2P';
-        border: white;
-        border-radius: 8px;
-        border-width: 5px;
-        border-color: white;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 45px;
-        margin-right: 20px ;
-        margin-left: 100px ;
-    }
-    .guideBtn:hover {
-        background-color:white;
-        color: pink;
-        transition: 0.7s;
+  #action-buttons {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+ /*================== Raise the Bar(s)======================= */
+
+#hunger-bar, #coding-bar, #boredom-bar {
+    width: 200px; 
+    height: 70px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgb(199, 154, 215);
+    position: relative;
+    margin-bottom: 10px;
     }
 
-/* ---------------------Animate my lil guy */
-@keyframes side-to-side {
+  #hunger-level {
+    width: 0;
+    height: 100%;
+    background-color: pink;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+    top: 0%;
+  }
+  #coding-level {
+    width: 0;
+    height: 100%;
+    background-color: pink;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+  }
+  #boredom-level {
+    width: 0;
+    height: 100%;
+    background-color: pink;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+  }
+/* ============Animation============= */
+  @keyframes side-to-side {
     from {left: 80%;}
     to {left: 20%;}
   }
   /* hop setting */
   @keyframes hop {
-    from {top: 55%};
-    to {bottom:48%};
+    from {top: 70%};
+    to {bottom:28%};
   }
-/* --------Sprite Setting */
-  #sprite{
 
+  #sprite{
+    top: 0%;
     position: absolute;
-    width: 138px;
-    height: 132px;
+    width: 150px;
+    height: auto;
+    top: 80%;
+    left: 100%;
+    animation-name:  side-to-side, hop;
+    animation-duration: 3.5s, .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1000;
+  }
+
+  #sprite-two{
+    top: 0%;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 80%;
+    left: 100%;
+    animation-name:  side-to-side, hop;
+    animation-duration: 3.5s, .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1000;
+
+  }
+
+  #sprite-three{
+    top: 0%;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 80%;
+    left: 100%;
+    animation-name:  side-to-side, hop;
+    animation-duration: 3.5s, .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1000;
+  }
+
+  #sprite-four{
+    top: 0%;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 80%;
+    left: 100%;
+    animation-name:  side-to-side, hop;
+    animation-duration: 3.5s, .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1000;
+  }
+
+  #dead  {
+    position: absolute;
+    width: 400px;
+    height: auto;
     top: 60%;
     left: 100%;
     animation-name:  side-to-side, hop;
     animation-duration: 3.5s, .5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-  }
+    opacity: 60%;
+    }
+/* =======Age Area============ */
+  #age-display {
+
+            border-color: none;
+            text-align: center;
+            color: white;
+            font-family: 'Press Start 2P'
+        }
