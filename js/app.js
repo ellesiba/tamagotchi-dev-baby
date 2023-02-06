@@ -57,25 +57,25 @@ function increaseAge() {
       }
       let ageCheckInterval = setInterval(checkAge, 1000);
       function checkAge() {
-          if (babyDev.age === 10) {
+          if (babyDev.age === 15) {
               alert(`Congrats! ${babyDev.name} is now a junior dev!`);
               changeImage();
-          } if (babyDev.age === 20) {
+          } if (babyDev.age === 35) {
               alert(`${babyDev.name} is now a pro--!`);
               alert("*cough* *cough* I mean POtato!")
               changeImageTwo();
-          } if (babyDev.age === 30) {
+          } if (babyDev.age === 45) {
               winGame()
           }
       }
       function changeImage() {
-          if (babyDev.age === 10) {
+          if (babyDev.age === 15) {
               document.getElementById("sprite").style.display = "none";
               document.getElementById("sprite-two").style.display = "block";
           }
       }
       function changeImageTwo() {
-          if (babyDev.age === 20) {
+          if (babyDev.age === 35) {
               document.getElementById("sprite-two").style.display = "none";
               document.getElementById("sprite-three").style.display = "block";
           }
@@ -83,7 +83,7 @@ function increaseAge() {
       //----------------Game Win-----------------------
      let hasWon = false;
       function winGame() {
-          if (!hasWon && babyDev.age === 30) {
+          if (!hasWon && babyDev.age === 45) {
               alert(`Congrats! ${babyDev.name} a beautiful successful senior potato *sniff*`);
               hasWon = true;
               clearInterval(hungerInterval);
@@ -101,9 +101,9 @@ function increaseAge() {
       }
 //----------------Bar Decreases/Increase-----------------------
 
-  let hungerInterval = setInterval(decreaseHungerBar, 2000);
-  let codingInterval = setInterval(decreaseCodingBar, 2000);
-  let boredomInterval = setInterval(decreaseBoredomBar, 2000);
+  let hungerInterval = setInterval(decreaseHungerBar, 750);
+  let codingInterval = setInterval(decreaseCodingBar, 1000);
+  let boredomInterval = setInterval(decreaseBoredomBar, 750);
   function decreaseHungerBar() {
     if(babyDev.hunger > 0 && babyDev.boredom > 0 && babyDev.coding > 0) {
         babyDev.hunger -= 10;
@@ -158,12 +158,12 @@ function increaseBoredomBar() {
         document.getElementById("play-button").disabled = true;
         document.getElementById("coding-button").disabled = true;
         clearInterval(codingInterval);
-        codingInterval = setInterval(decreaseCodingBar, 2000); {
+        codingInterval = setInterval(decreaseCodingBar, 1500); {
             changeBackgroundToNight()
             setTimeout(function(){
 
             changeBackgroundToDay()
-            }, 2000);
+            }, 1500);
 
         }
         }
@@ -179,6 +179,7 @@ function increaseBoredomBar() {
         document.getElementById("boredom-bar").style.display = "none";
         document.getElementById("action-buttons").style.display = "none";
         document.getElementById("sprite").style.display = "hidden";
+        document.getElementById("sprite").style.display = "none";
         document.getElementById("sprite-two").style.display = "none";
         document.getElementById("sprite-three").style.display = "none";
         document.getElementById("sprite-four").style.display = "none";
